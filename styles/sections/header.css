@@ -1,0 +1,123 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 3px;
+}
+
+ul#menu-header {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+header a {
+  padding: 0 30px 0 30px;
+}
+
+header a:hover,
+footer a:hover {
+  font-weight: 700;
+}
+
+/*Menu mobile*/
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  position: fixed;
+  top: 110px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu li {
+  padding: 30px;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+.mobile-menu a:hover {
+  font-weight: 700;
+}
+
+.hamburger-icon,
+.cross-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Styles pour la version mobile */
+@media (min-width: 767px) {
+  /* Cacher le menu mobile */
+  .mobile-menu {
+    display: none;
+  }
+  .hamburger-icon {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Cacher le menu desktop */
+  ul#menu-header {
+    display: none;
+  }
+  header {
+    margin: 20px 8px;
+  }
+
+  /* Afficher le bouton hamburger en version mobile */
+  .hamburger-icon {
+    display: block;
+  }
+
+  /* Cacher le bouton croix en version mobile */
+  .cross-icon {
+    display: none;
+  }
+
+  /* Afficher le menu hamburger en version mobile lorsqu'il est ouvert */
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+}

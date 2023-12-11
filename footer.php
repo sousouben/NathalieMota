@@ -1,10 +1,7 @@
-<?php wp_footer() ?>
-<footer>
-    <div class=footer>
-        <ul>
-            <li><a href="#">MENTIONS LÉGALES</a></li>
-            <li><a href="#">VIE PRIVÉE</a></li>
-            <li><p>TOUS DROITS RÉSERVÉS</p></li>
-        </ul>
-    </div>
-</footer>
+
+    <footer>
+        <?php wp_nav_menu(['theme_location' => 'footer']) ?> 
+    </footer>
+    <?php wp_footer() ?>
+</body>
+</html>
