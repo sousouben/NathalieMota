@@ -1,2 +1,8 @@
+@import "base/fonts.css";
 @import "sections/header.css";
 @import "sections/footer.css";
+@import "sections/modale.css";
+
+* {
+  font-family: "SpaceMono", sans-serif;
+}
