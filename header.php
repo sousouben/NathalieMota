@@ -10,6 +10,7 @@
 
 <header>     
   <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+  
     <img class='logo' src="<?php echo get_template_directory_uri() . '/assets/logo/Logo.png'; ?>" alt="Logo de Nathalie Mota">
   </a>
     
