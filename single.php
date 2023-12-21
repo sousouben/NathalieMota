@@ -11,6 +11,7 @@
 
 get_header();
 
+// Inclusion d'un template part spécifique pour les articles simples
 get_template_part('single_photo');
 
 get_footer();

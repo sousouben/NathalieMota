@@ -4,9 +4,9 @@
 
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-            <h1><?php get_the_title(); ?></h1>
+		<h1 class='titre_lien'><?php the_title(); ?></h1>		
             <section class="container">
+			
                 <?php the_content(); ?>
 
 
