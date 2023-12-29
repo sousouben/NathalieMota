@@ -21,6 +21,7 @@ $title = get_the_title(); // Ajout de cette ligne pour récupérer le titre de l
 $annee_terms = get_the_terms(get_the_ID(), 'annees');
 $categories = get_the_terms(get_the_ID(), 'categorie');
 $format_terms = get_the_terms(get_the_ID(), 'format');
+$categorie_name = $categories[0]->name;
 
 $next_photo = get_next_post();
 $previous_photo = get_previous_post();
@@ -94,8 +95,53 @@ $next_thumbnail = $next_photo ? get_the_post_thumbnail_url($next_photo->ID, 'thu
         <div class="likePhotos">
             <h3>Vous aimerez AUSSI</h3>
         </div>
-        <div class="card_photos"></div>
-        <button id="button_card_photos" class="button_card">Toutes les photos</button>
+        <div class="card_photos">
+        
+
+	  <?php
+
+	  $categories = get_the_terms(get_the_ID(), 'categorie');
+	     if ($categories && !is_wp_error($categories)) {
+	           $category_id = wp_list_pluck($categories, 'term_id');
+	               $args = array(
+	                   'post_type' => 'photos',
+	                   'posts_per_page' => 2,
+	                   'orderby' => 'rand',
+	                   'post__not_in' => array(get_the_ID()),
+	                   'tax_query' => array(
+	                            array(
+	                                'taxonomy' => 'categorie',
+	                                   'field' => 'term_id',
+	                                   'terms' => $category_id,
+	                               ),
+	                           ),
+	                   );
+
+	           $compteur = 0;
+	           $related_block = new WP_Query($args);
+						     while ($related_block->have_posts()) {
+						               $related_block->the_post();
+						               $photo = get_the_post_thumbnail_url(null, "large");
+						               $reference = get_field('reference');
+						               $categorie_name = isset($categories[0]) ? $categories[0]->name : '';
+
+						      get_template_part('templates_part/photo_block');
+						      $compteur++;
+						     						      
+						     }
+						   if ($compteur ===0) {
+						     echo "<p class='notPhoto'> Malheureusement, nous ne disposons pas d'une photo similaire pour la catégorie ''" . $categorie_name . "'' </p>"; 
+						     }
+	     } 
+	  ?>
+
+	
+        </div>
+        
+<button id="button_card_photos" class="button_card">
+        <a href="<?php echo esc_url(home_url('/')); ?>">Toutes les photos</a>
+    </button>
+        
     </div>
 
 </section>
