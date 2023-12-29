@@ -165,7 +165,6 @@
 .photo-block {
   width: 564px;
   height: 495px;
-  margin-bottom: 30px;
 }
 
 .photo-image {
@@ -189,10 +188,11 @@
   font-size: 14px;
   color: white;
   position: relative;
-  left: 487px;
+  left: 475px;
   top: 449px;
   display: none;
   width: 14%;
+  text-transform: uppercase;
 }
 
 .eye-link {
