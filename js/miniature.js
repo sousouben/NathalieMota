@@ -1,3 +1,4 @@
+console.log("miniature ok");
 jQuery(document).ready(function ($) {
   $(".arrow-left, .arrow-right").hover(
     function () {

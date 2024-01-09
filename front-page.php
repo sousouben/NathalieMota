@@ -25,8 +25,7 @@ get_header();
         </section>
         <section id="galerie">
 		<?php get_template_part('templates_part/photos_list'); ?>
-        </section>
-        
+        </section>       
 		   
 	</main>
 

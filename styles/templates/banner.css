@@ -20,11 +20,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "SpaceMono-Italic", sans-serif;
+  font-family: "SpaceMono_italic", sans-serif;
   font-weight: 700;
   font-size: 96px;
   text-transform: uppercase;
-  -webkit-text-stroke: 3px #ffffff;
+  -webkit-text-stroke: 0.1px #ffffff;
   -webkit-text-fill-color: transparent;
   z-index: 1;
 }

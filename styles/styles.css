@@ -6,6 +6,7 @@
 @import "templates/banner.css";
 @import "templates/galerie.css";
 @import "sections/catalogue_photo.css";
+@import "sections/lightbox.css";
 
 /* Variables de couleur */
 :root {
@@ -34,7 +35,7 @@ body {
 
 p {
   margin-bottom: 15px;
-  font-family: "PoppinsRegular";
+  font-family: "Poppins_regular";
   font-size: 14px;
 }
 
