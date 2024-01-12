@@ -3,10 +3,11 @@
 @import "sections/header.css";
 @import "sections/footer.css";
 @import "sections/modale.css";
-@import "templates/banner.css";
-@import "templates/galerie.css";
 @import "sections/catalogue_photo.css";
 @import "sections/lightbox.css";
+@import "templates/banner.css";
+@import "templates/dropdown.css";
+@import "templates/galerie.css";
 
 /* Variables de couleur */
 :root {

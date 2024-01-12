@@ -19,11 +19,8 @@ get_header();
 
 		<section id="header">
 					<?php get_template_part('templates_part/banner'); ?>
-		</section>
-        <section id="dropdown">
-            
-        </section>
-        <section id="galerie">
+		</section>        
+        <section id="galeriePhotos">
 		<?php get_template_part('templates_part/photos_list'); ?>
         </section>       
 		   
