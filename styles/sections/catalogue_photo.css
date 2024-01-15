@@ -162,6 +162,7 @@
   width: 100%;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .photo-block {
@@ -233,4 +234,14 @@
 
 .notPhoto {
   color: red;
+}
+
+@media (max-width: 900px) {
+  .photo-block {
+    padding-bottom: 10px;
+  }
+
+  .entry-content {
+    width: 297px;
+  }
 }

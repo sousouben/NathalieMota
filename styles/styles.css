@@ -50,7 +50,7 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: 66px;
+  font-size: 46px;
   font-style: italic;
 }
 
@@ -67,6 +67,6 @@ h3 {
   }
 
   h2 {
-    font-size: 46px;
+    font-size: 28px;
   }
 }

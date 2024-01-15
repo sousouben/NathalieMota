@@ -23,7 +23,7 @@
 /* Personnalisation de la première option de la liste déroulante */
 .select2-container--default .select2-results__option:first-child {
   background-color: white !important;
-  color: #000 !important;
+  color: red !important;
 }
 
 .select2-container--default .select2-results__option--selected {
@@ -65,5 +65,8 @@
 @media (max-width: 836px) {
   #dropdown {
     width: 67%;
+  }
+  .select2-container {
+    width: 157px !important;
   }
 }
