@@ -61,3 +61,9 @@
   .select2-selection__arrow {
   top: 8px !important;
 }
+
+@media (max-width: 836px) {
+  #dropdown {
+    width: 67%;
+  }
+}

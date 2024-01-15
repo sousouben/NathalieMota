@@ -28,6 +28,7 @@
 
 body {
   margin: auto;
+  overflow: scroll;
 }
 
 .titre_lien {

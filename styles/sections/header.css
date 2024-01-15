@@ -97,6 +97,11 @@ footer a:hover {
     display: none !important;
   }
 }
+@media (max-width: 837px) {
+  header a {
+    padding: 0 10px 0 10px;
+  }
+}
 
 /* Styles pour la version mobile */
 @media (max-width: 767px) {
