@@ -1,0 +1,27 @@
+.wp-block-group,
+.mentions,
+.propos,
+.contact-page {
+  padding: 50px 60px;
+}
+
+.wp-block-group h1,
+h1.mentions,
+h1.propos,
+h1.contact-page {
+  font-size: 48px;
+}
+
+.wp-block-group h2,
+.wp-block-group h3 {
+  font-size: 28px;
+  padding: 10px 10px;
+}
+
+.wp-block-group h3 {
+  font-size: 20px;
+}
+
+.wp-block-group p {
+  font-family: "SpaceMono", sans-serif;
+}

@@ -25,9 +25,7 @@ if (window.location.pathname === "/contact/") {
   openModal();
 }
 
-// Reste du code inchangé
 $(document).ready(() => {
-  // Sélection des éléments du DOM
   const CONTACT_LINK = $("#menu-item-40");
 
   // Gestionnaires d'événements pour l'ouverture de la modale
