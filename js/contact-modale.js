@@ -8,6 +8,7 @@ const openModal = () => {
   // Affichage de la modale en utilisant Flexbox
   MODAL_OVERLAY.css("display", "flex");
   if (
+    //Vérifie si le bouton "boutonContact" a un attribut "data-reference" défini et non vide, puis met à jour la valeur du champ "referencePhoto" avec cette référence.
     boutonContact.attr("data-reference") &&
     boutonContact.attr("data-reference").trim() !== ""
   ) {

@@ -35,12 +35,13 @@ $args_photos = array(
 
 $photos_query = new WP_Query($args_photos);
 
+//La fonction wp_localize_script permet de passer des données du côté serveur (PHP) au côté client (JavaScript).
 wp_localize_script('Ajax', 'ajaxChargerPlus', array(
     'ajaxurl' => admin_url('admin-ajax.php'),
     'query_vars' => json_encode($args_photos)
     )
 );
-
+ //Une boucle vérifie si des photos sont disponibles. Si oui, elle itère sur chaque photo, initialise des variables et inclut le modèle de bloc de photo spécifié par get_template_part.
 if ($photos_query->have_posts()) :
 
 set_query_var('photo_block_args', array('context' => 'front-page'));
