@@ -244,4 +244,9 @@
   .entry-content {
     width: 297px;
   }
+
+  .entry-content h2 {
+    width: 307px;
+    font-size: 38px;
+  }
 }
