@@ -61,7 +61,6 @@ h3 {
   font-style: normal;
 }
 
-/* Media Query pour les écrans larges */
 @media (max-width: 767px) {
   h1 {
     font-size: 27.59px;
