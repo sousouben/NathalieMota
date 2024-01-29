@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="description" content="Thème pour le site de Nathalie Mota, photographe Freelance">
+  <meta name="author" content="Mouatakide Souad">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <?php wp_head(); ?>
 </head>
@@ -30,7 +32,7 @@
     $menu_args = array(
       'theme_location' => 'header',
       'container'      => 'nav',
-      'container_class'=> 'main-menu',
+      'container_class' => 'main-menu',
     );
 
     wp_nav_menu($menu_args);
@@ -47,5 +49,3 @@
       <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/cross.png'); ?>" alt="Icon Cross">
     </div>
   </header>
-
-  
